@@ -61,12 +61,14 @@ func main() {
 
 	fmt.Printf("Contents of text1: \n\n%s", content1)
 	fmt.Println("\nThe size of text1.txt in bytes is: ", len(byteSlice1))
-	fmt.Printf("\nContents of text2: \n%s", content2)
+	fmt.Printf("Contents of text1 as hex: \n\n% X", content1)
+	fmt.Printf("\n\nContents of text2: \n\n%s", content2)
 	fmt.Println("\nThe size of text2.txt in bytes is: ", len(byteslice2))
+	fmt.Printf("\nContents of text2 as hex: \n\n% X", content2)
 
 	if(bytes.Equal(byteSlice1, byteslice2)) {
-		fmt.Println("\nThe content of the two files is equal.")
+		fmt.Println("\n\nThe content of the two files is equal.")
 	} else {
-		fmt.Println("\nThe content of the two files is NOT equal.")
+		fmt.Println("\n\nThe content of the two files is NOT equal.")
 	}
 }
