@@ -8,6 +8,7 @@ import (
 )
 
 func SearchForLineshift(fileToSearch string) {
+
 	content, err := ioutil.ReadFile(fileToSearch)
 	if err != nil {
 		log.Fatal(err)
